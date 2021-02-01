@@ -3,7 +3,6 @@ const VueLoaderPlugin = require("vue-loader/lib/plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./src/client/main.js",
   output: {
     filename: "js/[name].js",
     path: path.join(__dirname, "/dist"),
@@ -31,6 +30,6 @@ module.exports = {
       },
     ],
   },
-  plugins: [new VueLoaderPlugin()],
   devtool: "eval-cheap-module-source-map",
+  plugins: [new VueLoaderPlugin()],
 };

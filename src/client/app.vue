@@ -1,5 +1,7 @@
 <template>
-  <v-button />
+  <div id="app">
+    <router-view />
+  </div>
 </template>
 
 <script>
@@ -7,9 +9,6 @@ import VButton from "./components/button/button.vue";
 
 export default {
   name: "VApp",
-  components: {
-    VButton,
-  },
 };
 </script>
 
