@@ -1,0 +1,29 @@
+{
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "es2020": true,
+    "jest": true,
+    "browser": true,
+    "node": true
+  },
+  "plugins": ["prettier"],
+  "extends": [
+    "airbnb-base",
+    "plugin:unicorn/recommended",
+    "plugin:vue/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "ignorePatterns": [
+    ".stylelintrc.js",
+    "commitlint.config.js",
+    "postcss.config.js",
+    "webpack.config.js"
+  ],
+  "rules": {
+    "import/no-extraneous-dependencies": "off",
+    "quotes": ["error", "double", { "avoidEscape": true }],
+    "unicorn/no-reduce": "off"
+  }
+}
