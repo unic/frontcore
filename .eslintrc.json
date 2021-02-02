@@ -8,12 +8,13 @@
     "browser": true,
     "node": true
   },
-  "plugins": ["prettier"],
+  "plugins": ["prettier-vue"],
   "extends": [
     "airbnb-base",
     "plugin:unicorn/recommended",
     "plugin:vue/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier-vue/recommended",
+    "prettier/vue"
   ],
   "ignorePatterns": [
     ".stylelintrc.js",

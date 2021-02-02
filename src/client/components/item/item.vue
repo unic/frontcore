@@ -36,7 +36,7 @@ export default {
   methods: {
     fetchItem() {
       // return the Promise from the action
-      return this.$store.dispatch("fetchItem", this.$route.params.id);
+      return this.$store.dispatch("fetchItem");
     },
   },
 };

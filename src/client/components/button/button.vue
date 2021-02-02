@@ -1,6 +1,6 @@
 <template>
-  <button class="example">
-    {{ msg }}
+  <button class="py-2 px-3 bg-purple-500 font-bold">
+    {{ text }}
   </button>
 </template>
 
@@ -8,14 +8,8 @@
 export default {
   data() {
     return {
-      msg: "Hello world!",
+      text: "Button",
     };
   },
 };
 </script>
-
-<style>
-.example {
-  color: red;
-}
-</style>

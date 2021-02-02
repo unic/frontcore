@@ -13,12 +13,12 @@ export default function createStore() {
     }),
 
     actions: {
-      fetchItem({ commit }, id) {
+      fetchItem({ commit }) {
         // return the Promise via `store.dispatch()` so that we know
         // when the data has been fetched
         return new Promise((resolve) => resolve({ id: 1, item: "car" })).then(
           (item) => {
-            commit("setItem", { id, item });
+            commit("setItem", { id: 1, item });
           }
         );
       },
