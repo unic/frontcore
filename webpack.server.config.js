@@ -1,12 +1,12 @@
-const path = require("path");
 const { merge } = require("webpack-merge");
 const VueSSRServerPlugin = require("vue-server-renderer/server-plugin");
 const baseConfig = require("./webpack.base.config.js");
 
 module.exports = merge(baseConfig, {
   // Point entry to your app's server entry file
+  // VueSSRServerPlugin requires there there is only 1 entry
   entry: {
-    main: path.join(__dirname, "src/server/index.js"),
+    main: "./src/server/index.js",
   },
 
   // This allows webpack to handle dynamic imports in a Node-appropriate

@@ -13,7 +13,7 @@
         </p>
         <h2 class="text-lg font-bold pb-3">What is frontcore made of?</h2>
         <p class="pb-3 leading-relaxed">
-          frontcore is built with express, vue, vuex, webpack. I
+          frontcore is built with express, vue, vuex, webpack.
         </p>
         <v-item></v-item>
       </div>
