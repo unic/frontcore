@@ -10,6 +10,9 @@ import serverConfig from "../../../webpack.server.config";
 import createRenderer from "./create-renderer";
 import { readFile, handleWebpackBuildErrors } from "./utils";
 
+/**
+ * @description A stateful function which sets up the server- and client-side webpack compilers and reads the page template into state. webpack-dev-middleware and webpack-hot-middleware are connected to the client-side webpack compiler in order to automatically rebuild on code changes.
+ */
 export default () => {
   const state = {
     /* client manifest built by webpack and passed to createBundleRenderer */
